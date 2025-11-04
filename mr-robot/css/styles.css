@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'geist';
+    src: url('https: //github.com/vercel/geist-font/blob/449415077ee4ffc191b4e7e557cd35e88b1b98fd/fonts/Geist/ttf/Geist-Regular.ttf');
+}
+a:link {
+    color: #61AFEF;
+}
+
+a:visited {
+    color: #C678DD;
+}
+
+body {
+    background-color: #180000ff;
+    color: #abb2bf;
+
+    font-family: system-ui;
+    font-weight: 500;
+
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.title {
+    font-size: 36px;
+    vertical-align: middle;
+    font-family: fixedsys;
+    display: inline-block;
+}
+
+* {
+    vertical-align: middle;
+    max-width: 100%;
+}
