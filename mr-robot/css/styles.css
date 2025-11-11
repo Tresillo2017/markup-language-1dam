@@ -1,40 +1,159 @@
+/* Font face declaration */
 @font-face {
     font-family: 'geist';
-    src: url('https: //github.com/vercel/geist-font/blob/449415077ee4ffc191b4e7e557cd35e88b1b98fd/fonts/Geist/ttf/Geist-Regular.ttf');
+    src: url('https://github.com/vercel/geist-font/blob/449415077ee4ffc191b4e7e557cd35e88b1b98fd/fonts/Geist/ttf/Geist-Regular.ttf');
 }
+
+/* Link pseudo-classes */
 a:link {
     color: #61AFEF;
+    text-decoration: none;
 }
 
 a:visited {
     color: #C678DD;
 }
 
-body {
-    background-color: #180000ff;
-    color: #abb2bf;
-
-    font-family: system-ui;
-    font-weight: 500;
-
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+a:hover {
+    text-decoration: underline;
 }
 
+a:active {
+    color: #E06C75;
+}
+
+/* Body styles */
+body {
+    background-color: #180000;
+    color: #abb2bf;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header styles */
 .header * {
     display: inline-block;
     vertical-align: middle;
 }
 
+/* Title styles */
 .title {
     font-size: 36px;
     vertical-align: middle;
-    font-family: fixedsys;
+    font-family: fixedsys, monospace;
     display: inline-block;
+    margin: 0;
 }
 
+/* Universal selector - reset */
 * {
     vertical-align: middle;
     max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Vertical navigation bar */
+nav {
+    width: 200px;
+    background-color: #282c34;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #61AFEF;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3e4451;
+    text-decoration: none;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #282c34;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+thead {
+    background: linear-gradient(135deg, #3e4451 0%, #282c34 100%);
+}
+
+th {
+    padding: 16px 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #61AFEF;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #61AFEF;
+}
+
+td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #3e4451;
+    color: #abb2bf;
+    line-height: 1.5;
+}
+
+tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+    background-color: #3e4451;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+    background-color: #21252b;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #282c34;
+}
+
+/* Center align specific table cells */
+td[style*="text-align: center"],
+th[style*="text-align: center"] {
+    text-align: center;
+}
+
+/* Bold text in tables */
+td[style*="font-weight: bold"] {
+    font-weight: bold;
+    color: #E5C07B;
 }
