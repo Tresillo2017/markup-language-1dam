@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - FitLife Gym</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header>
+        <h1>🏋️ FitLife Gym</h1>
+        <p class="tagline">Tu mejor versión te espera</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="dieta.html">Dieta</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Formulario de Contacto y Registro</h2>
+        <p>Completa el siguiente formulario para unirte a FitLife Gym</p>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <!-- Sección de Registro -->
+            <fieldset>
+                <legend>Registro</legend>
+                
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required minlength="4" pattern="[a-zA-Z0-9]+" title="Solo letras y números, mínimo 4 caracteres">
+                
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required minlength="6" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Mínimo 6 caracteres, debe contener mayúsculas, minúsculas y números">
+            </fieldset>
+
+            <!-- Sección de Datos Personales -->
+            <fieldset>
+                <legend>Datos Personales</legend>
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                
+                <label>Género:</label>
+                <div class="radio-group">
+                    <input type="radio" id="hombre" name="genero" value="hombre" required>
+                    <label for="hombre">Hombre</label>
+                    
+                    <input type="radio" id="mujer" name="genero" value="mujer">
+                    <label for="mujer">Mujer</label>
+                    
+                    <input type="radio" id="no-decir" name="genero" value="no-decir">
+                    <label for="no-decir">Prefiero no decirlo</label>
+                </div>
+                
+                <label for="motivo">Motivo de Contacto:</label>
+                <textarea id="motivo" name="motivo" rows="5" required placeholder="Cuéntanos por qué quieres unirte a FitLife Gym..."></textarea>
+                
+                <label for="documento">Adjuntar DNI o Justificante Médico:</label>
+                <input type="file" id="documento" name="documento" accept=".pdf,.jpg,.jpeg,.png" required>
+            </fieldset>
+
+            <!-- Sección de Otros Datos -->
+            <fieldset>
+                <legend>Otros Datos de Interés</legend>
+                
+                <label>Deportes que practicas:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="futbol" name="deportes" value="futbol">
+                    <label for="futbol">Fútbol</label>
+                    
+                    <input type="checkbox" id="natacion" name="deportes" value="natacion">
+                    <label for="natacion">Natación</label>
+                    
+                    <input type="checkbox" id="running" name="deportes" value="running">
+                    <label for="running">Running</label>
+                    
+                    <input type="checkbox" id="ciclismo" name="deportes" value="ciclismo">
+                    <label for="ciclismo">Ciclismo</label>
+                    
+                    <input type="checkbox" id="yoga" name="deportes" value="yoga">
+                    <label for="yoga">Yoga</label>
+                    
+                    <input type="checkbox" id="otros" name="deportes" value="otros">
+                    <label for="otros">Otros</label>
+                </div>
+                
+                <label for="frecuencia">Frecuencia de Ejercicio:</label>
+                <select id="frecuencia" name="frecuencia" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="nunca">Nunca</option>
+                    <option value="1-2">1-2 días/semana</option>
+                    <option value="3-4">3-4 días/semana</option>
+                    <option value="mas-4">Más de 4 días/semana</option>
+                </select>
+                
+                <label for="talla">Talla de Camiseta (Regalo de Bienvenida):</label>
+                <select id="talla" name="talla" required>
+                    <option value="">Selecciona tu talla</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <label for="privacidad">
+                        Acepto la <a href="#" target="_blank">Política de Privacidad</a>
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Botones del Formulario -->
+            <div class="form-buttons">
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FitLife Gym. Todos los derechos reservados.</p>
+        <p><a href="index.html">Volver al inicio</a></p>
+    </footer>
+</body>
+</html>
