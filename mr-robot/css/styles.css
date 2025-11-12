@@ -25,6 +25,11 @@ a:active {
 /* Body styles */
 body {
     background-color: #180000;
+    background-image: url('../media/background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #abb2bf;
     font-family: system-ui, -apple-system, sans-serif;
     font-weight: 500;
@@ -59,7 +64,9 @@ body {
 /* Vertical navigation bar */
 nav {
     width: 200px;
-    background-color: #282c34;
+    background-color: rgba(40, 44, 52, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 20px;
     position: fixed;
     left: 0;
