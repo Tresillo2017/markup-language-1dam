@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contacto - Mr. Robot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://analytics.tomasps.com/api/script.js" data-site-id="76cf7b435753" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <p>¿Tienes preguntas o comentarios sobre Mr. Robot?</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#sinopsis">Sinopsis</a></li>
+            <li><a href="index.html#reparto">Personajes</a></li>
+            <li><a href="index.html#temporadas">Temporadas</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="formulario-contacto">
+            <h2>Formulario de Contacto</h2>
+            <p>
+                Completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.
+                Todos los campos marcados con <span style="color: red;">*</span> son obligatorios.
+            </p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo: <span style="color: red;">*</span></label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej: Elliot Alderson">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico: <span style="color: red;">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información del Mensaje</legend>
+                    
+                    <div class="form-group">
+                        <label for="asunto">Asunto: <span style="color: red;">*</span></label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona un asunto</option>
+                            <option value="consulta-general">Consulta general</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="error">Reporte de error</option>
+                            <option value="contenido">Solicitud de contenido</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="temporada">¿Sobre qué temporada es tu consulta?</label>
+                        <select id="temporada" name="temporada">
+                            <option value="">No aplica</option>
+                            <option value="temporada-1">Temporada 1</option>
+                            <option value="temporada-2">Temporada 2</option>
+                            <option value="temporada-3">Temporada 3</option>
+                            <option value="temporada-4">Temporada 4</option>
+                            <option value="todas">Todas las temporadas</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje: <span style="color: red;">*</span></label>
+                        <textarea id="mensaje" name="mensaje" rows="8" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferencias</legend>
+                    
+                    <div class="form-group">
+                        <label>¿Cómo prefieres que te contactemos?</label>
+                        <div>
+                            <input type="radio" id="contacto-email" name="metodo-contacto" value="email" checked>
+                            <label for="contacto-email">Por correo electrónico</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="contacto-telefono" name="metodo-contacto" value="telefono">
+                            <label for="contacto-telefono">Por teléfono</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="contacto-cualquiera" name="metodo-contacto" value="cualquiera">
+                            <label for="contacto-cualquiera">Cualquier método</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Intereses:</label>
+                        <div>
+                            <input type="checkbox" id="interes-noticias" name="intereses" value="noticias">
+                            <label for="interes-noticias">Recibir noticias sobre Mr. Robot</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="interes-analisis" name="intereses" value="analisis">
+                            <label for="interes-analisis">Análisis de episodios</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="interes-curiosidades" name="intereses" value="curiosidades">
+                            <label for="interes-curiosidades">Curiosidades y trivia</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="interes-comunidad" name="intereses" value="comunidad">
+                            <label for="interes-comunidad">Eventos de la comunidad</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" id="acepto-terminos" name="acepto-terminos" required>
+                        <label for="acepto-terminos">Acepto los términos y condiciones de privacidad <span style="color: red;">*</span></label>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit">Enviar mensaje</button>
+                    <button type="reset">Limpiar formulario</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="info-adicional">
+            <article>
+                <h2>Otras Formas de Contacto</h2>
+                <p>También puedes contactarnos a través de:</p>
+                <ul>
+                    <li><strong>Email directo:</strong> <a href="mailto:contact@tomasps.com">contact@tomasps.com</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/Tresillo2017/markup-language-1dam" target="_blank">Repositorio del proyecto</a></li>
+                    <li><strong>Portfolio:</strong> <a href="https://tomasps.com" target="_blank">tomasps.com</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Información</h2>
+        <p><strong>Tiempo de respuesta:</strong> 24-48 horas</p>
+        <p><strong>Horario:</strong> Lunes a Viernes, 9:00 - 18:00</p>
+        <p><strong>Privacidad:</strong> Tus datos están protegidos y no serán compartidos</p>
+        <p><strong>Soporte:</strong> Respuestas en español e inglés</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 TomasPS</p>
+        <p>
+            <a href="https://github.com/Tresillo2017/markup-language-1dam/tree/main/mr-robot" target="_blank">Código
+                fuente</a> |
+            <a href="https://tomasps.com" target="_blank">Portfolio</a> |
+            <a href="mailto:contact@tomasps.com">Contacto</a>
+        </p>
+    </footer>
+</body>
+
+</html>
