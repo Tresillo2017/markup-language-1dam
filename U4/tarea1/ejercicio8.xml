@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE equipo [
+  <!ELEMENT equipo (jugador*)>
+  <!ELEMENT jugador ((dorsal, puesto) | nombre)>
+  <!ELEMENT dorsal (#PCDATA)>
+  <!ELEMENT puesto (#PCDATA)>
+  <!ELEMENT nombre (#PCDATA)>
+]>
+<!--
+  EXPLICACIÓN DE LA COMBINACIÓN DE OPERADORES:
+  
+  - jugador* : Pueden aparecer cero o más elementos jugador (opcional)
+  - jugador((dorsal, puesto) | nombre) : Cada jugador contiene:
+    * OPCIÓN 1: dorsal Y puesto (secuencia)
+    * OPCIÓN 2: nombre
+    * Pero NO puede contener ambas opciones a la vez
+  
+  (dorsal, puesto) : Secuencia obligatoria de dorsal y puesto
+  | : Alternancia (uno u otro)
+  nombre : Alternativa a la secuencia anterior
+-->
+<equipo>
+  <jugador>
+    <dorsal>7</dorsal>
+    <puesto>Delantero</puesto>
+  </jugador>
+  
+  <jugador>
+    <nombre>Sergio Ramos</nombre>
+  </jugador>
+  
+  <jugador>
+    <dorsal>1</dorsal>
+    <puesto>Portero</puesto>
+  </jugador>
+  
+  <jugador>
+    <nombre>Vinícius Junior</nombre>
+  </jugador>
+  
+  <jugador>
+    <dorsal>15</dorsal>
+    <puesto>Centrocampista</puesto>
+  </jugador>
+</equipo>

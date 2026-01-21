@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE albumes [
+  <!ELEMENT albumes (album+)>
+  <!ELEMENT album (titulo, año, canciones*)>
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT año (#PCDATA)>
+  <!ELEMENT canciones (cancion+)>
+  <!ELEMENT cancion (nombre, duracion)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT duracion (#PCDATA)>
+]>
+<!--
+  EXPLICACIÓN DE LOS OPERADORES DE CARDINALIDAD:
+  
+  - titulo (sin operador): Debe aparecer exactamente 1 vez (obligatorio)
+  - año (sin operador): Debe aparecer exactamente 1 vez (obligatorio)
+  - canciones* : Puede aparecer 0, 1 o más veces (opcional)
+  
+  El operador * significa "cero o más ocurrencias"
+-->
+<albumes>
+  <album>
+    <titulo>Abbey Road</titulo>
+    <año>1969</año>
+    <canciones>
+      <cancion>
+        <nombre>Come Together</nombre>
+        <duracion>4:19</duracion>
+      </cancion>
+      <cancion>
+        <nombre>Something</nombre>
+        <duracion>3:02</duracion>
+      </cancion>
+    </canciones>
+  </album>
+  
+  <album>
+    <titulo>Dark Side of the Moon</titulo>
+    <año>1973</año>
+    <canciones>
+      <cancion>
+        <nombre>Brain Damage</nombre>
+        <duracion>3:49</duracion>
+      </cancion>
+      <cancion>
+        <nombre>Eclipse</nombre>
+        <duracion>2:02</duracion>
+      </cancion>
+    </canciones>
+    <canciones>
+      <cancion>
+        <nombre>Time</nombre>
+        <duracion>7:04</duracion>
+      </cancion>
+    </canciones>
+  </album>
+  
+  <album>
+    <titulo>Thriller</titulo>
+    <año>1982</año>
+  </album>
+</albumes>

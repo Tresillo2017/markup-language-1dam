@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE equipo [
+  <!ELEMENT equipo (jugador*)>
+  <!ELEMENT jugador ((dorsal | puesto), nombre)>
+  <!ELEMENT dorsal (#PCDATA)>
+  <!ELEMENT puesto (#PCDATA)>
+  <!ELEMENT nombre (#PCDATA)>
+]>
+<!--
+  EXPLICACIÓN DE LA COMBINACIÓN DE OPERADORES:
+  
+  - jugador* : Pueden aparecer cero o más elementos jugador (opcional)
+  - jugador((dorsal | puesto), nombre) : Cada jugador contiene:
+    * UN elemento (dorsal O puesto) - obligatoriamente uno de los dos
+    * UN elemento nombre - obligatorio
+  
+  La coma (,) significa "secuencia" (deben aparecer en ese orden)
+  El tubo (|) significa "alternancia" (uno u otro)
+-->
+<equipo>
+  <jugador>
+    <dorsal>7</dorsal>
+    <nombre>Cristiano Ronaldo</nombre>
+  </jugador>
+  
+  <jugador>
+    <puesto>Defensa Central</puesto>
+    <nombre>Sergio Ramos</nombre>
+  </jugador>
+  
+  <jugador>
+    <dorsal>1</dorsal>
+    <nombre>David de Gea</nombre>
+  </jugador>
+  
+  <jugador>
+    <puesto>Extremo Derecho</puesto>
+    <nombre>Vinícius Junior</nombre>
+  </jugador>
+</equipo>

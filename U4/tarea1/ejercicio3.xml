@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE carrito [
+  <!ELEMENT carrito (producto+)>
+  <!ELEMENT producto (nombre, precio, resenas+)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT precio (#PCDATA)>
+  <!ELEMENT resenas (resena+)>
+  <!ELEMENT resena (usuario, calificacion, comentario)>
+  <!ELEMENT usuario (#PCDATA)>
+  <!ELEMENT calificacion (#PCDATA)>
+  <!ELEMENT comentario (#PCDATA)>
+]>
+<!--
+  EXPLICACIÓN DEL OPERADOR + (Cardinalidad):
+  
+  El operador + en una DTD significa "una o más ocurrencias".
+  Esto indica que el elemento debe aparecer al menos una vez, 
+  pero puede aparecer múltiples veces.
+  
+  Sintaxis: <!ELEMENT elemento_padre (elemento_hijo+)>
+  
+  En este ejemplo:
+  - carrito(producto+): El carrito debe tener 1 o más productos (obligatorio al menos uno)
+  - resenas(resena+): Un producto debe tener 1 o más reseñas (obligatorio al menos una)
+  
+  Otros operadores de cardinalidad:
+  - ? = cero o una ocurrencia (opcional)
+  - * = cero o más ocurrencias (opcional, puede no existir)
+  - + = una o más ocurrencias (obligatorio al menos uno)
+  - sin operador = exactamente una ocurrencia (obligatorio)
+-->
+<carrito>
+  <producto>
+    <nombre>Laptop Dell</nombre>
+    <precio>899.99</precio>
+    <resenas>
+      <resena>
+        <usuario>Juan Pérez</usuario>
+        <calificacion>5</calificacion>
+        <comentario>Excelente producto, muy rápida y confiable</comentario>
+      </resena>
+      <resena>
+        <usuario>María García</usuario>
+        <calificacion>4</calificacion>
+        <comentario>Buena relación calidad-precio, algo caliente</comentario>
+      </resena>
+      <resena>
+        <usuario>Carlos López</usuario>
+        <calificacion>5</calificacion>
+        <comentario>Perfecto para el trabajo, muy satisfecho</comentario>
+      </resena>
+    </resenas>
+  </producto>
+  
+  <producto>
+    <nombre>Mouse Logitech</nombre>
+    <precio>29.99</precio>
+    <resenas>
+      <resena>
+        <usuario>Ana Martínez</usuario>
+        <calificacion>4</calificacion>
+        <comentario>Cómodo y preciso, recomendado</comentario>
+      </resena>
+      <resena>
+        <usuario>Roberto Sánchez</usuario>
+        <calificacion>5</calificacion>
+        <comentario>Excelente precisión, batería dura mucho</comentario>
+      </resena>
+    </resenas>
+  </producto>
+  
+  <producto>
+    <nombre>Teclado Mecánico</nombre>
+    <precio>149.99</precio>
+    <resenas>
+      <resena>
+        <usuario>Pedro Rodríguez</usuario>
+        <calificacion>5</calificacion>
+        <comentario>Muy buen sonido y respuesta, calidad premium</comentario>
+      </resena>
+    </resenas>
+  </producto>
+</carrito>

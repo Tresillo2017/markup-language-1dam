@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE albumes [
+  <!ELEMENT albumes (album+)>
+  <!ELEMENT album (titulo, año, canciones?)>
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT año (#PCDATA)>
+  <!ELEMENT canciones (#PCDATA)>
+]>
+<!--
+  EXPLICACIÓN DE LOS OPERADORES DE CARDINALIDAD:
+  
+  - titulo (sin operador): Debe aparecer exactamente 1 vez (obligatorio)
+  - año (sin operador): Debe aparecer exactamente 1 vez (obligatorio)
+  - canciones? : Puede aparecer 0 o 1 vez (opcional, puede estar vacío o tener valor)
+  
+  El operador ? significa "cero o una ocurrencia"
+-->
+<albumes>
+  <album>
+    <titulo>Abbey Road</titulo>
+    <año>1969</año>
+    <canciones>Come Together, Something, Maxwell's Silver Hammer</canciones>
+  </album>
+  
+  <album>
+    <titulo>Dark Side of the Moon</titulo>
+    <año>1973</año>
+    <canciones>Brain Damage, Eclipse, Time, Us and Them</canciones>
+  </album>
+  
+  <album>
+    <titulo>Thriller</titulo>
+    <año>1982</año>
+  </album>
+</albumes>

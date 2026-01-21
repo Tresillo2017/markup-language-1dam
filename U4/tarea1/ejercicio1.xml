@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+  <!ELEMENT biblioteca (libro+)>
+  <!ELEMENT libro (codigo_libro, titulo, editorial, edicion, isbn, num_paginas, autor)>
+  <!ELEMENT codigo_libro (#PCDATA)>
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT editorial (#PCDATA)>
+  <!ELEMENT edicion (#PCDATA)>
+  <!ELEMENT isbn (#PCDATA)>
+  <!ELEMENT num_paginas (#PCDATA)>
+  <!ELEMENT autor (#PCDATA)>
+]>
+<biblioteca>
+  <libro>
+    <codigo_libro>LIB001</codigo_libro>
+    <titulo>Don Quijote de la Mancha</titulo>
+    <editorial>Planeta</editorial>
+    <edicion>1</edicion>
+    <isbn>978-8408066019</isbn>
+    <num_paginas>1152</num_paginas>
+    <autor>Miguel de Cervantes</autor>
+  </libro>
+  
+  <libro>
+    <codigo_libro>LIB002</codigo_libro>
+    <titulo>Cien años de soledad</titulo>
+    <editorial>Sudamericana</editorial>
+    <edicion>2</edicion>
+    <isbn>978-8432217289</isbn>
+    <num_paginas>471</num_paginas>
+    <autor>Gabriel García Márquez</autor>
+  </libro>
+  
+  <libro>
+    <codigo_libro>LIB003</codigo_libro>
+    <titulo>El Quijote digital</titulo>
+    <editorial>Anaya</editorial>
+    <edicion>3</edicion>
+    <isbn>978-8469854432</isbn>
+    <num_paginas>320</num_paginas>
+    <autor>Juan Manuel de Prada</autor>
+  </libro>
+</biblioteca>

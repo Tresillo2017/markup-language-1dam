@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa [
+  <!ELEMENT empresa (empleado+)>
+  <!ELEMENT empleado (id | nombre)>
+  <!ELEMENT id (#PCDATA)>
+  <!ELEMENT nombre (#PCDATA)>
+]>
+<!--
+  EXPLICACIÓN DEL OPERADOR | (OR/Alternancia):
+  
+  - empleado (id | nombre): El elemento empleado debe contener 
+    OBLIGATORIAMENTE uno de los dos: id O nombre, pero NO ambos.
+  
+  El operador | significa "alternancia" o "disyunción exclusiva"
+  Se utiliza cuando queremos que aparezca uno u otro elemento, pero no ambos.
+-->
+<empresa>
+  <empleado>
+    <id>EMP001</id>
+  </empleado>
+  
+  <empleado>
+    <nombre>Juan García López</nombre>
+  </empleado>
+  
+  <empleado>
+    <id>EMP003</id>
+  </empleado>
+  
+  <empleado>
+    <nombre>María Rodríguez Martínez</nombre>
+  </empleado>
+  
+  <empleado>
+    <id>EMP005</id>
+  </empleado>
+</empresa>
