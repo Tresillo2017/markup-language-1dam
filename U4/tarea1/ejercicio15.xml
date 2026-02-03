@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cursos [
+  <!ELEMENT cursos (asignatura*)>
+  <!ELEMENT asignatura (nombre, curso, profesor)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ATTLIST nombre codigo NMTOKEN #REQUIRED>
+  <!ELEMENT curso (#PCDATA)>
+  <!ELEMENT profesor (#PCDATA)>
+]>
+
+<cursos>
+  <asignatura>
+    <nombre codigo="DAW001">Desarrollo en Entorno Cliente</nombre>
+    <curso>2º DAM</curso>
+    <profesor>Juan Martínez</profesor>
+  </asignatura>
+  
+  <asignatura>
+    <nombre codigo="ASI002">Administración de Sistemas</nombre>
+    <curso>2º ASIR</curso>
+    <profesor>María García</profesor>
+  </asignatura>
+  
+  <asignatura>
+    <nombre codigo="DAM003">Bases de Datos</nombre>
+    <curso>2º DAM</curso>
+    <profesor>Carlos López</profesor>
+  </asignatura>
+  
+  <asignatura>
+    <nombre codigo="ASI004">Seguridad</nombre>
+    <curso>2º ASIR</curso>
+    <profesor>Ana Rodríguez</profesor>
+  </asignatura>
+</cursos>

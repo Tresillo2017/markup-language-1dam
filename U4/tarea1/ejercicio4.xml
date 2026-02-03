@@ -9,15 +9,7 @@
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT duracion (#PCDATA)>
 ]>
-<!--
-  EXPLICACIÓN DE LOS OPERADORES DE CARDINALIDAD:
-  
-  - titulo (sin operador): Debe aparecer exactamente 1 vez (obligatorio)
-  - año (sin operador): Debe aparecer exactamente 1 vez (obligatorio)
-  - canciones* : Puede aparecer 0, 1 o más veces (opcional)
-  
-  El operador * significa "cero o más ocurrencias"
--->
+
 <albumes>
   <album>
     <titulo>Abbey Road</titulo>
@@ -46,8 +38,6 @@
         <nombre>Eclipse</nombre>
         <duracion>2:02</duracion>
       </cancion>
-    </canciones>
-    <canciones>
       <cancion>
         <nombre>Time</nombre>
         <duracion>7:04</duracion>

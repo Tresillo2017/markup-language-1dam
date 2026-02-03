@@ -5,15 +5,7 @@
   <!ELEMENT id (#PCDATA)>
   <!ELEMENT nombre (#PCDATA)>
 ]>
-<!--
-  EXPLICACIÓN DEL OPERADOR | (OR/Alternancia):
-  
-  - empleado (id | nombre): El elemento empleado debe contener 
-    OBLIGATORIAMENTE uno de los dos: id O nombre, pero NO ambos.
-  
-  El operador | significa "alternancia" o "disyunción exclusiva"
-  Se utiliza cuando queremos que aparezca uno u otro elemento, pero no ambos.
--->
+
 <empresa>
   <empleado>
     <id>EMP001</id>

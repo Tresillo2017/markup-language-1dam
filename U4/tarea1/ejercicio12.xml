@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE restaurantes [
+  <!ELEMENT restaurantes (restaurante*)>
+  <!ELEMENT restaurante (pizzeria | hamburgueseria | braseria)>
+  <!ELEMENT pizzeria (#PCDATA)>
+  <!ATTLIST pizzeria pizza (MARG | AMER | PROS | BARB) "MARG">
+  <!ELEMENT hamburgueseria (#PCDATA)>
+  <!ELEMENT braseria (#PCDATA)>
+]>
+
+<restaurantes>
+  <restaurante>
+    <pizzeria pizza="MARG">Pizzería Clásica</pizzeria>
+  </restaurante>
+  
+  <restaurante>
+    <pizzeria pizza="AMER">Pizza Americana</pizzeria>
+  </restaurante>
+  
+  <restaurante>
+    <hamburgueseria>Burger Master</hamburgueseria>
+  </restaurante>
+  
+  <restaurante>
+    <pizzeria pizza="PROS">Prosecco Pizza</pizzeria>
+  </restaurante>
+  
+  <restaurante>
+    <pizzeria pizza="BARB">La Barbacoa</pizzeria>
+  </restaurante>
+  
+  <restaurante>
+    <pizzeria>Pizza Tradicional</pizzeria>
+  </restaurante>
+  
+  <restaurante>
+    <braseria>El Asador</braseria>
+  </restaurante>
+</restaurantes>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empleados [
+  <!ELEMENT empleados (profesion*)>
+  <!ELEMENT profesion (informatico | docente | quimico)>
+  <!ELEMENT informatico (#PCDATA)>
+  <!ELEMENT docente (#PCDATA)>
+  <!ATTLIST docente especialidad CDATA #REQUIRED>
+  <!ELEMENT quimico (#PCDATA)>
+]>
+
+<empleados>
+  <profesion>
+    <informatico>Desarrollo de aplicaciones web</informatico>
+  </profesion>
+  
+  <profesion>
+    <docente especialidad="Programación">Profesor de informática</docente>
+  </profesion>
+  
+  <profesion>
+    <docente especialidad="Bases de datos">Profesor de SQL</docente>
+  </profesion>
+  
+  <profesion>
+    <quimico>Químico industrial</quimico>
+  </profesion>
+  
+  <profesion>
+    <informatico>Experto en ciberseguridad</informatico>
+  </profesion>
+</empleados>

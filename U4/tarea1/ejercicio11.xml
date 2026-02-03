@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE restaurantes [
+  <!ELEMENT restaurantes (restaurante*)>
+  <!ELEMENT restaurante (pizzeria | hamburgueseria | braseria)>
+  <!ELEMENT pizzeria (#PCDATA)>
+  <!ELEMENT hamburgueseria (#PCDATA)>
+  <!ELEMENT braseria (#PCDATA)>
+  <!ATTLIST braseria carnes CDATA #FIXED "rojas">
+]>
+
+<restaurantes>
+  <restaurante>
+    <pizzeria>La Bella Italia</pizzeria>
+  </restaurante>
+  
+  <restaurante>
+    <hamburgueseria>Burger King</hamburgueseria>
+  </restaurante>
+  
+  <restaurante>
+    <braseria carnes="rojas">Argentina Grill</braseria>
+  </restaurante>
+  
+  <restaurante>
+    <pizzeria>Pizzamania</pizzeria>
+  </restaurante>
+  
+  <restaurante>
+    <braseria carnes="rojas">Parrilla del Gaucho</braseria>
+  </restaurante>
+</restaurantes>

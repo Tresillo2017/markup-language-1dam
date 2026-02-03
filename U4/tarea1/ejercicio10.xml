@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empleados [
+  <!ELEMENT empleados (profesion*)>
+  <!ELEMENT profesion (informatico | docente | quimico)>
+  <!ELEMENT informatico (#PCDATA)>
+  <!ELEMENT docente (#PCDATA)>
+  <!ATTLIST docente especialidad CDATA #REQUIRED>
+  <!ATTLIST docente horas CDATA #IMPLIED>
+  <!ATTLIST docente evaluacion CDATA #REQUIRED>
+  <!ELEMENT quimico (#PCDATA)>
+]>
+
+<empleados>
+  <profesion>
+    <informatico>Desarrollador de sistemas</informatico>
+  </profesion>
+  
+  <profesion>
+    <docente especialidad="Programación" horas="20" evaluacion="Continua">Profesor de desarrollo</docente>
+  </profesion>
+  
+  <profesion>
+    <docente especialidad="Bases de datos" evaluacion="Examen final">Profesor de datos</docente>
+  </profesion>
+  
+  <profesion>
+    <docente especialidad="Sistemas" horas="15" evaluacion="Práctica">Profesor de infraestructura</docente>
+  </profesion>
+  
+  <profesion>
+    <quimico>Especialista en química aplicada</quimico>
+  </profesion>
+</empleados>

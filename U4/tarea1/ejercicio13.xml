@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE asignaturas [
+  <!ELEMENT asignaturas (asignatura*)>
+  <!ELEMENT asignatura (daw | asir | dam)>
+  <!ELEMENT daw (#PCDATA)>
+  <!ELEMENT asir (#PCDATA)>
+  <!ATTLIST asir codigo ID #IMPLIED>
+  <!ELEMENT dam (#PCDATA)>
+]>
+
+<asignaturas>
+  <asignatura>
+    <daw>Desarrollo en Entorno Cliente</daw>
+  </asignatura>
+  
+  <asignatura>
+    <asir codigo="ASI001">Administración de Sistemas Informáticos</asir>
+  </asignatura>
+  
+  <asignatura>
+    <dam>Desarrollo de Aplicaciones Multiplataforma</dam>
+  </asignatura>
+  
+  <asignatura>
+    <asir>Seguridad en Sistemas</asir>
+  </asignatura>
+  
+  <asignatura>
+    <daw>Entorno Servidor</daw>
+  </asignatura>
+  
+  <asignatura>
+    <dam codigo="DAM001">Acceso a datos</dam>
+  </asignatura>
+</asignaturas>

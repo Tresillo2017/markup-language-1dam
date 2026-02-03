@@ -10,25 +10,7 @@
   <!ELEMENT calificacion (#PCDATA)>
   <!ELEMENT comentario (#PCDATA)>
 ]>
-<!--
-  EXPLICACIÓN DEL OPERADOR + (Cardinalidad):
-  
-  El operador + en una DTD significa "una o más ocurrencias".
-  Esto indica que el elemento debe aparecer al menos una vez, 
-  pero puede aparecer múltiples veces.
-  
-  Sintaxis: <!ELEMENT elemento_padre (elemento_hijo+)>
-  
-  En este ejemplo:
-  - carrito(producto+): El carrito debe tener 1 o más productos (obligatorio al menos uno)
-  - resenas(resena+): Un producto debe tener 1 o más reseñas (obligatorio al menos una)
-  
-  Otros operadores de cardinalidad:
-  - ? = cero o una ocurrencia (opcional)
-  - * = cero o más ocurrencias (opcional, puede no existir)
-  - + = una o más ocurrencias (obligatorio al menos uno)
-  - sin operador = exactamente una ocurrencia (obligatorio)
--->
+
 <carrito>
   <producto>
     <nombre>Laptop Dell</nombre>

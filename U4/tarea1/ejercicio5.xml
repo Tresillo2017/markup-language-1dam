@@ -6,15 +6,7 @@
   <!ELEMENT año (#PCDATA)>
   <!ELEMENT canciones (#PCDATA)>
 ]>
-<!--
-  EXPLICACIÓN DE LOS OPERADORES DE CARDINALIDAD:
-  
-  - titulo (sin operador): Debe aparecer exactamente 1 vez (obligatorio)
-  - año (sin operador): Debe aparecer exactamente 1 vez (obligatorio)
-  - canciones? : Puede aparecer 0 o 1 vez (opcional, puede estar vacío o tener valor)
-  
-  El operador ? significa "cero o una ocurrencia"
--->
+
 <albumes>
   <album>
     <titulo>Abbey Road</titulo>

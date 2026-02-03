@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+  <!ELEMENT biblioteca (libro*)>
+  <!ELEMENT libro (nombre, autor, editorial)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ATTLIST nombre tipo_imagen NOTATION (gif | jpg | png) #IMPLIED>
+  <!ELEMENT autor (#PCDATA)>
+  <!ELEMENT editorial (#PCDATA)>
+  <!NOTATION gif PUBLIC "image/gif">
+  <!NOTATION jpg PUBLIC "image/jpeg">
+  <!NOTATION png PUBLIC "image/png">
+]>
+
+<biblioteca>
+  <libro>
+    <nombre tipo_imagen="jpg">Don Quijote de la Mancha</nombre>
+    <autor>Miguel de Cervantes</autor>
+    <editorial>Planeta</editorial>
+  </libro>
+  
+  <libro>
+    <nombre tipo_imagen="png">Cien años de soledad</nombre>
+    <autor>Gabriel García Márquez</autor>
+    <editorial>Sudamericana</editorial>
+  </libro>
+  
+  <libro>
+    <nombre tipo_imagen="gif">El Quijote digital</nombre>
+    <autor>Juan Manuel de Prada</autor>
+    <editorial>Anaya</editorial>
+  </libro>
+  
+  <libro>
+    <nombre>La Casa de los Espíritus</nombre>
+    <autor>Isabel Allende</autor>
+    <editorial>Plaza</editorial>
+  </libro>
+  
+  <libro>
+    <nombre tipo_imagen="jpg">Obsesión</nombre>
+    <autor>Paula Hawkins</autor>
+    <editorial>Suma de Letras</editorial>
+  </libro>
+</biblioteca>
