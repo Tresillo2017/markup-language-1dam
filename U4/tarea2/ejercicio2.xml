@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE playoffs [
+  <!ELEMENT playoffs (nombre_competicion, jugadores, fecha, lugar)>
+  <!ELEMENT nombre_competicion (#PCDATA)>
+  <!ELEMENT jugadores (jugador+)>
+  <!ELEMENT jugador (nombre_jug, equipo, faltas_personales?, posicion)>
+  <!ATTLIST jugador
+    dorsal ID #REQUIRED
+    minutos_jugados (A|B|C|D) "A"
+  >
+  <!ELEMENT nombre_jug (#PCDATA)>
+  <!ELEMENT equipo (#PCDATA)>
+  <!ELEMENT faltas_personales EMPTY>
+  <!ELEMENT posicion (#PCDATA)>
+  <!ELEMENT fecha (#PCDATA)>
+  <!ELEMENT lugar (#PCDATA)>
+]>
+<playoffs>
+  <nombre_competicion>Playoffs ACB Liga Endesa 2022</nombre_competicion>
+  <jugadores>
+    <jugador dorsal="D3" minutos_jugados="A">
+      <nombre_jug>Oriol Paulí</nombre_jug>
+      <equipo>Barca</equipo>
+      <posicion>Ala</posicion>
+    </jugador>
+    <jugador dorsal="D23" minutos_jugados="B">
+      <nombre_jug>Sergio Llull</nombre_jug>
+      <equipo>Real Madrid</equipo>
+      <faltas_personales/>
+      <posicion>Escolta</posicion>
+    </jugador>
+    <jugador dorsal="D7" minutos_jugados="C">
+      <nombre_jug>Tomás Bellas</nombre_jug>
+      <equipo>Ucam Murcia</equipo>
+      <posicion>Base</posicion>
+    </jugador>
+    <jugador dorsal="D24" minutos_jugados="D">
+      <nombre_jug>David Walker</nombre_jug>
+      <equipo>Obradoiro</equipo>
+      <faltas_personales/>
+      <posicion>Pivot</posicion>
+    </jugador>
+  </jugadores>
+  <fecha>05/01/2023</fecha>
+  <lugar>Palacio de los Deportes</lugar>
+</playoffs>
