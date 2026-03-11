@@ -1,0 +1,37 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE panel_vuelos [
+    <!ELEMENT panel_vuelos (aeropuerto, vuelo+, fecha)>
+    <!ELEMENT aeropuerto (#PCDATA)>
+    <!ELEMENT vuelo (diario?, origen, destino, hora_salida, hora_llegada)>
+    <!ELEMENT diario EMPTY>
+    <!ELEMENT origen (#PCDATA)>
+    <!ELEMENT destino (#PCDATA)>
+    <!ELEMENT hora_salida (#PCDATA)>
+    <!ELEMENT hora_llegada (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ATTLIST vuelo 
+        codigo ID #REQUIRED
+        estado (C | E | R) "E">
+]>
+<panel_vuelos>
+    <aeropuerto>VM</aeropuerto>
+
+    <vuelo codigo="V10" estado="R">
+        <diario />
+        <origen>Alicante</origen>
+        <destino>Madrid</destino>
+        <hora_salida>9:30</hora_salida>
+        <hora_llegada>10:30</hora_llegada>
+    </vuelo>
+
+    <vuelo codigo="V11" estado="C">
+        <!-- sin <diario/> porque NO es diario -->
+        <origen>Alicante</origen>
+        <destino>Barcelona</destino>
+        <hora_salida>
+        10:15</hora_salida>
+        <hora_llegada>12:15</hora_llegada>
+    </vuelo>
+
+    <fecha>28/11/2023</fecha>
+</panel_vuelos>

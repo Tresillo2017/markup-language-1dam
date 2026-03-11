@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- elemento raíz -->
+  <xs:element name="entradas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="entrada" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="musical" type="xs:string"/>
+              <xs:element name="precio">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minExclusive value="15"/>
+                        <xs:maxExclusive value="120"/>
+                    </xs:restriction>
+                </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="numero" type="xs:integer"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
