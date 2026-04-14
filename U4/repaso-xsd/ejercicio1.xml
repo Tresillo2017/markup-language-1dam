@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registroTemperatura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ejercicio1.xsd">
+    <provincia>Madrid</provincia>
+    <fecha>2026-04-14</fecha>
+    <temperaturaMinima>3</temperaturaMinima>
+    <temperaturaMaxima>21</temperaturaMaxima>
+    <incidencias>
+        <incidencia>
+            <nombre>lluvia</nombre>
+            <severidad>media</severidad>
+        </incidencia>
+        <incidencia>
+            <nombre>calor</nombre>
+            <severidad>baja</severidad>
+        </incidencia>
+    </incidencias>
+</registroTemperatura>

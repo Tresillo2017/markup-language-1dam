@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empleados xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ejercicio3.xsd">
+    <empleado id="1" departamento="Ventas">
+        <nombre>Laura Garcia</nombre>
+        <codigo>A12345B</codigo>
+    </empleado>
+    <empleado id="2" departamento="Informática">
+        <nombre>Pedro Lopez</nombre>
+        <codigo>ZX987654</codigo>
+    </empleado>
+</empleados>

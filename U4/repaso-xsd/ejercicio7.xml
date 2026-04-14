@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogoMultimedia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ejercicio7.xsd">
+    <obra id="O1">
+        <titulo>El nombre del viento</titulo>
+        <anio>2007</anio>
+        <libro>
+            <autor>Patrick Rothfuss</autor>
+            <paginas>662</paginas>
+        </libro>
+        <genero>drama</genero>
+    </obra>
+    <obra id="O2">
+        <titulo>Inception</titulo>
+        <anio>2010</anio>
+        <pelicula>
+            <director>Christopher Nolan</director>
+            <duracion>148</duracion>
+        </pelicula>
+        <genero>accion</genero>
+    </obra>
+</catalogoMultimedia>

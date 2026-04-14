@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedidos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ejercicio5.xsd">
+    <pedido numero="1001">
+        <cliente>Juan Torres</cliente>
+        <producto promo="si">
+            <nombre>Teclado mecánico</nombre>
+            <cantidad>2</cantidad>
+            <categoria>informatica</categoria>
+        </producto>
+        <producto>
+            <nombre>Lámpara</nombre>
+            <cantidad>1</cantidad>
+            <categoria>hogar</categoria>
+        </producto>
+    </pedido>
+</pedidos>

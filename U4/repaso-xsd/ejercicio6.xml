@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reservasHotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ejercicio6.xsd">
+    <reserva codigo="R001">
+        <cliente>Ana López</cliente>
+        <habitacion>
+            <numero>203</numero>
+            <tipo>doble</tipo>
+            <precioNoche>85.50</precioNoche>
+        </habitacion>
+        <fechaEntrada>2026-05-10</fechaEntrada>
+        <fechaSalida>2026-05-15</fechaSalida>
+        <observaciones>Cama extra solicitada</observaciones>
+    </reserva>
+    <reserva codigo="R002">
+        <cliente>Carlos Pérez</cliente>
+        <habitacion>
+            <numero>101</numero>
+            <tipo>individual</tipo>
+            <precioNoche>60</precioNoche>
+        </habitacion>
+        <fechaEntrada>2026-06-01</fechaEntrada>
+        <fechaSalida>2026-06-03</fechaSalida>
+    </reserva>
+</reservasHotel>

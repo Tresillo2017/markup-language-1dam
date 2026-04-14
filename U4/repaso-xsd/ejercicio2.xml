@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehiculos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ejericio2.xsd">
+    <vehiculo tipo="coche">
+        <marca>Seat</marca>
+        <modelo>Ibiza</modelo>
+        <velocidad>180</velocidad>
+    </vehiculo>
+    <vehiculo tipo="moto">
+        <marca>Yamaha</marca>
+        <modelo>R3</modelo>
+        <velocidad>160</velocidad>
+    </vehiculo>
+</vehiculos>

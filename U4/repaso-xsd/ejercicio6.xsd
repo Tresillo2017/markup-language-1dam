@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="reservasHotel">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="reserva" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="cliente" type="xs:string" />
+                            <xs:element name="habitacion">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="numero" type="xs:string" />
+                                        <xs:element name="tipo">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="individual"></xs:enumeration>
+                                                    <xs:enumeration value="doble"></xs:enumeration>
+                                                    <xs:enumeration value="suite"></xs:enumeration>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="precioNoche">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:decimal">
+                                                    <xs:minExclusive value="0"></xs:minExclusive>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="fechaEntrada" type="xs:date" />
+                            <xs:element name="fechaSalida" type="xs:date" />
+                            <xs:element name="observaciones" minOccurs="0" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="codigo" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

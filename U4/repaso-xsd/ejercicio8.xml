@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agendaContactos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ejercicio8.xsd">
+    <contacto id="C001">
+        <nombre>Ana López</nombre>
+        <telefono>612345678</telefono>
+        <email>ana@example.com</email>
+        <empresa>Tech Solutions</empresa>
+    </contacto>
+    <contacto id="C002">
+        <nombre>Pedro García</nombre>
+        <telefono>698765432</telefono>
+        <email>pedro@gmail.com</email>
+        <amigo>Universidad</amigo>
+        <direccion>Calle Mayor 12</direccion>
+    </contacto>
+</agendaContactos>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ejercicio4.xsd">
+    <libro isbn="9788401234567" genero="novela">
+        <titulo>La sombra del viento</titulo>
+        <autor>Carlos Ruiz Zafón</autor>
+        <anyo>2001</anyo>
+        <precio>19.95</precio>
+    </libro>
+    <libro isbn="9788467890123" genero="ensayo">
+        <titulo>Historia breve</titulo>
+        <autor>Maria Perez</autor>
+        <anyo>2018</anyo>
+        <precio>15.50</precio>
+    </libro>
+</biblioteca>

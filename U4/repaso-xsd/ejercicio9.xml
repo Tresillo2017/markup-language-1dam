@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<universidad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ejercicio9.xsd">
+    <alumno matricula="A12345">
+        <nombre>Laura Martínez</nombre>
+        <edad>21</edad>
+        <curso>tercero</curso>
+        <beca>Completa</beca>
+        <observaciones>Intercambio Erasmus</observaciones>
+    </alumno>
+    <alumno matricula="B67890">
+        <nombre>Carlos Ruiz</nombre>
+        <edad>24</edad>
+        <curso>cuarto</curso>
+        <pago>Completo</pago>
+    </alumno>
+</universidad>
